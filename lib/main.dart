@@ -1,11 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:fundamental/academy/learning_path_page.dart';
-import 'package:fundamental/news_app/article.dart';
-import 'package:fundamental/news_app/article_web_view.dart';
-import 'package:fundamental/news_app/detail_article_page.dart';
-import 'package:fundamental/theme/styles.dart';
-
-import 'news_app/news_list_page.dart';
+import 'package:fundamental/state_management/module_page.dart';
+import 'package:fundamental/state_management_provider/done_module_provider.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +14,18 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    // return
+    return ChangeNotifierProvider(
+      create: (context) => DoneModuleProvider(),
+      child: MaterialApp(
+        title: 'Flutter',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+          visualDensity: VisualDensity.adaptivePlatformDensity
+        ),
+        home: const ModulePage(),
+        debugShowCheckedModeBanner: false,
+      ),
+    );
 
     // return MaterialApp(
     //   title: 'Flutter',
