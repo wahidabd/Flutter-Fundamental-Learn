@@ -29,10 +29,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
 
   webview_flutter: ^2.0.4
   google_fonts: ^3.0.1
   provider: ^6.0.3
+  intl: ^0.17.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -55,6 +58,7 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  generate: true
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
