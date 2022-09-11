@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:fundamental/news_app/article.dart';
-import 'package:fundamental/news_app/detail_article_page.dart';
+import 'package:fundamental/first_module/news_app/article.dart';
+import 'package:fundamental/first_module/news_app/detail_article_page.dart';
 
 class NewsListPage extends StatelessWidget {
   static const routeName = '/article_list';

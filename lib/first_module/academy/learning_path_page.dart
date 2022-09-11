@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fundamental/academy/learning_path_list.dart';
+import 'package:fundamental/first_module/academy/learning_path_list.dart';
 
 class LearningPathPage extends StatelessWidget{
 

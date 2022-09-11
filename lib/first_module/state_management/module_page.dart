@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:fundamental/state_management/done_module_list.dart';
-import 'package:fundamental/state_management/module_list.dart';
+import 'package:fundamental/first_module/state_management/done_module_list.dart';
+import 'package:fundamental/first_module/state_management/module_list.dart';
 
 class ModulePage extends StatefulWidget {
   const ModulePage({

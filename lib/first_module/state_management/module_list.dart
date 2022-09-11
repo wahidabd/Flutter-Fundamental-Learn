@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:fundamental/state_management_provider/done_module_provider.dart';
+import 'package:fundamental/first_module/state_management_provider/done_module_provider.dart';
 import 'package:provider/provider.dart';
 
 class ModuleList extends StatefulWidget {
