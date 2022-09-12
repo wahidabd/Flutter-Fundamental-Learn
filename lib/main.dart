@@ -4,6 +4,7 @@ import 'package:fundamental/first_module/theme/styles.dart';
 import 'package:fundamental/learn_api/data/model/article.dart';
 import 'package:fundamental/learn_api/ui/article_detail_page.dart';
 import 'package:fundamental/learn_api/ui/article_list_page.dart';
+import 'package:fundamental/learn_api/ui/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -62,9 +63,9 @@ class MyApp extends StatelessWidget {
               )),
         ),
       ),
-      initialRoute: ArticleListPage.routeName,
+      initialRoute: HomePage.routeName,
       routes: {
-        ArticleListPage.routeName: (context) => const ArticleListPage(),
+        HomePage.routeName: (context) => const HomePage(),
         ArticleDetailPage.routeName: (context) => ArticleDetailPage(
               article: ModalRoute.of(context)?.settings.arguments as Article,
         ),
